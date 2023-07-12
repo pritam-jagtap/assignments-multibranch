@@ -16,7 +16,7 @@
                    sh "sudo yum install httpd -y"
                    sh "sudo service httpd start"
                    sh " sudo chmod -R 777 /mnt/assignments/assignments-multibranch/index.html"
-                   sh "sudo mv index.html /var/www/html " 
+                   sh "sudo mv /mnt/assignments/assignments-multibranch/index.html /var/www/html " 
                    sh "sudo chmod -R 777 /var/www/html/index.html"
                    sh "sudo service httpd restart"           
                        }
