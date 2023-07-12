@@ -15,6 +15,7 @@
                     sh "sudo git clone https://github.com/pritam-jagtap/assignments-multibranch.git -b 23Q1"
                    sh "sudo yum install httpd -y"
                    sh "sudo service httpd start"
+                   sh " sudo chmod -R 777 /mnt/assignments/index.html"
                    sh "sudo mv index.html /var/www/html " 
                    sh "sudo chmod -R 777 /var/www/html/index.html"
                    sh "sudo service httpd restart"           
